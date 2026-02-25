@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silly Hydra - Coming Soon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Silly Hydra — Coming Soon</title>
+    <meta name="description" content="Silly Hydra — Proyecto web próximamente. Aquí encontrarás noticias y actualizaciones sobre Silly Hydra.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sillyhydra.com/">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Silly Hydra — Coming Soon">
+    <meta property="og:description" content="Silly Hydra — Proyecto web próximamente. Aquí encontrarás noticias y actualizaciones sobre Silly Hydra.">
+    <meta property="og:url" content="https://www.sillyhydra.com/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Silly Hydra — Coming Soon">
+    <meta name="twitter:description" content="Silly Hydra — Proyecto web próximamente.">
+
+    <link rel="alternate" hreflang="es" href="https://www.sillyhydra.com/">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Silly Hydra",
+        "url": "https://www.sillyhydra.com/",
+        "description": "Silly Hydra — Proyecto web próximamente."
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <nav aria-label="Principal">
+            <a href="/" class="brand">Silly Hydra</a>
+        </nav>
+    </header>
+
+    <main class="container" role="main">
         <h1>Coming Soon</h1>
-        <p class="subtitle">silly hydra</p>
-    </div>
-    <script src="script.js"></script>
+        <p class="subtitle">Silly Hydra — Próximamente</p>
+    </main>
+
+    <footer>
+        <p>© <span id="year">2026</span> Silly Hydra</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
